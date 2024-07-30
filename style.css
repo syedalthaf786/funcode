@@ -161,7 +161,7 @@ img {
   }
 
   .container .btn {
-    gap: 15px; /* Reduce the gap between buttons */
+    gap: 20px; /* Reduce the gap between buttons */
   }
 
   .btn a {
@@ -198,7 +198,7 @@ img {
 
   .container .btn {
      /* Stack buttons vertically */
-    gap: 10px; /* Reduce gap */
+    gap: 15px; /* Reduce gap */
   }
 
   .btn a {
