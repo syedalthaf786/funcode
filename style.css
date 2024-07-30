@@ -197,7 +197,7 @@ img {
   }
 
   .container .btn {
-    flex-direction: column; /* Stack buttons vertically */
+    flex-direction: row; /* Stack buttons vertically */
     gap: 10px; /* Reduce gap */
   }
 
