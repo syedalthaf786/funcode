@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   font-family: sans-serif;
 }
 
@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #c2bcbc;
-  color: #fff
+  color: #fff;
 }
 
 .container {
@@ -24,10 +24,6 @@ body {
   gap: 20px;
   max-width: 500px;
   margin: 20px;
-}
-
-.container .tenor-gif-embed {
-  max-width: 200px;
 }
 
 .container .btn {
@@ -155,4 +151,110 @@ img {
 #quote{
   color:black;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Styles for tablets (portrait and landscape) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    padding: 10px;
+    margin: 10px;
+    max-width: 90%; /* Adjust container width */
+  }
+
+  .container .btn {
+    gap: 15px; /* Reduce the gap between buttons */
+  }
+
+  .btn a {
+    padding: 8px 20px; /* Adjust padding */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  img {
+    width: 150px; /* Adjust image width */
+  }
+
+  .drop-main {
+    font-size: 1.8rem; /* Adjust font size for better readability */
+    margin: 1rem; /* Reduce margin */
+  }
+
+  #quote {
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+/* Styles for mobile devices */
+@media (max-width: 599px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 5px;
+    margin: 5px;
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .container .btn {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Reduce gap */
+  }
+
+  .btn a {
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  img {
+    width: 100px; /* Adjust image width */
+  }
+
+  .drop-main {
+    font-size: 1.6rem; /* Reduce font size for mobile */
+    margin: 0.5rem;
+    text-indent: 10px; /* Adjust margin */
+  }
+
+  #quote {
+    font-size: 12px;
+     /* Adjust font size */
+  }
+}
+@media (max-width: 599px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 5px;
+    margin: 5px;
+    max-width: 100%; /* Full width on mobile screens */
+  }
+
+  .container .btn {
+    flex-direction: column; /* Stack buttons vertically on mobile */
+    gap: 10px; /* Reduce gap between buttons */
+  }
+
+  .btn a {
+    padding: 8px 15px; /* Adjust button padding for mobile */
+    font-size: 14px; /* Adjust button font size */
+  }
+
+  img {
+    width: 100px; /* Adjust image width for mobile */
+  }
+
+  .drop-main {
+    font-size: 1.6rem; /* Reduce font size for mobile */
+    margin: 0.5rem; /* Adjust margin for better fit */
+  }
+
+  #quote {
+    font-size: 12px; /* Adjust font size for quotes on mobile */
+  }
 }
