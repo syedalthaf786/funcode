@@ -1,0 +1,158 @@
+/* author - deepak tiwari */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2bcbc;
+  color: #fff
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container .tenor-gif-embed {
+  max-width: 200px;
+}
+
+.container .btn {
+  display: flex;
+  gap: 25px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fffdfd;
+  background: #b22020;
+  padding: 10px 25px;
+  border-radius: 8px;
+  box-shadow: 0.5rem 1rem 3rem hsla(0, 73%, 53%, 0.3);
+}
+
+audio {
+  display: none;
+}
+
+img {
+  width: 200px;
+  mix-blend-mode: multiply;
+
+}
+
+.wrapper.one {
+  background: none;
+}
+
+.drop-main {
+  display: flex;
+  font-size: 2rem;
+  margin: 1.5rem;
+  justify-content: center;
+  font-family: "Russo One", sans-serif;
+  text-indent: 12px;
+}
+
+.d {
+  opacity: 0;
+  animation: drop 0.4s linear forwards;
+  color: #000000;
+}
+
+.o {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.1s;
+  color: #000000;
+}
+
+.y {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.2s;
+  color: #000000;
+}
+
+.v {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.3s;
+  color: #000000;
+}
+
+.u {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.5s;
+  color: #000000;
+}
+
+.L {
+  opacity: 0;
+  animation: drop 2s linear forwards 1s;
+  color: #fd0606;
+}
+.e {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.5s;
+  color: #0a0a0a;
+}
+.q {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.7s;
+  color: #000000;
+}
+.m {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.8s;
+  color: #000000;
+}
+.p {
+  opacity: 0;
+  animation: drop 2s linear forwards 2s;
+  color: #000000;
+}
+@keyframes drop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  65% {
+    transform: translateY(-17px);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+#yes{
+  width: 300px;
+  mix-blend-mode:darken;
+}
+#quote{
+  color:black;
+  font-size: 15px;
+}
