@@ -151,10 +151,6 @@ img {
 #quote{
   color:black;
   font-size: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
 }
 /* Styles for tablets (portrait and landscape) */
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -179,7 +175,8 @@ img {
 
   .drop-main {
     font-size: 1.8rem; /* Adjust font size for better readability */
-    margin: 1rem; /* Reduce margin */
+    margin: 1rem;
+    text-indent:10px;/* Reduce margin */
   }
 
   #quote {
@@ -216,45 +213,11 @@ img {
   .drop-main {
     font-size: 1.6rem; /* Reduce font size for mobile */
     margin: 0.5rem;
-    text-indent: 10px; /* Adjust margin */
+    text-indent: 8px; /* Adjust margin */
   }
 
   #quote {
     font-size: 12px;
      /* Adjust font size */
-  }
-}
-@media (max-width: 599px) {
-  body {
-    padding: 5px;
-  }
-
-  .container {
-    padding: 5px;
-    margin: 5px;
-    max-width: 100%; /* Full width on mobile screens */
-  }
-
-  .container .btn {
-    flex-direction: column; /* Stack buttons vertically on mobile */
-    gap: 10px; /* Reduce gap between buttons */
-  }
-
-  .btn a {
-    padding: 8px 15px; /* Adjust button padding for mobile */
-    font-size: 14px; /* Adjust button font size */
-  }
-
-  img {
-    width: 100px; /* Adjust image width for mobile */
-  }
-
-  .drop-main {
-    font-size: 1.6rem; /* Reduce font size for mobile */
-    margin: 0.5rem; /* Adjust margin for better fit */
-  }
-
-  #quote {
-    font-size: 12px; /* Adjust font size for quotes on mobile */
   }
 }
